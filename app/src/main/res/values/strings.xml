@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test Add</string>
+    <string name="ad_attribution">Ad</string>
+    <string name="video">Video status: Video playback has ended.</string>
+    <string name="video_status">Video status: Ad does not contain a video asset.</string>
+
+</resources>
