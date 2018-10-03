@@ -3,5 +3,8 @@
     <string name="ad_attribution">Ad</string>
     <string name="video">Video status: Video playback has ended.</string>
     <string name="video_status">Video status: Ad does not contain a video asset.</string>
+    <string name="checkbox">Start video ads muted</string>
+    <string name="refresh">Refresh Ad</string>
+    <string name="videostatus">Video status:</string>
 
 </resources>

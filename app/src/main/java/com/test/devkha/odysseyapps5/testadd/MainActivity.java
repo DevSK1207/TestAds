@@ -28,8 +28,8 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String ADMOB_AD_UNIT_ID = "ca-app-pub-3940256099942544/1044960115";
-    private static final String ADMOB_APP_ID = "ca-app-pub-3940256099942544~3347511713";
+    private static final String ADMOB_AD_UNIT_ID = "ca-app-pub-9079664095868787/9399098010";
+    private static final String ADMOB_APP_ID = "ca-app-pub-9079664095868787~7009217320";
 
     private Button refresh;
     private CheckBox startVideoAdsMuted;
@@ -50,14 +50,13 @@ public class MainActivity extends AppCompatActivity {
 
         refresh.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View unusedView) {
+           public void onClick(View unusedView) {
                 refreshAd();
             }
         });
-
         refreshAd();
 
-    }
+   }
 
     private void populateUnifiedNativeAdView(UnifiedNativeAd nativeAd, UnifiedNativeAdView adView) {
 
@@ -71,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         adView.setPriceView(adView.findViewById(R.id.ad_price));
         adView.setStarRatingView(adView.findViewById(R.id.ad_stars));
         adView.setStoreView(adView.findViewById(R.id.ad_store));
-        adView.setAdvertiserView(adView.findViewById(R.id.ad_advertiser));
+       adView.setAdvertiserView(adView.findViewById(R.id.ad_advertiser));
 
         ((TextView) adView.getHeadlineView()).setText(nativeAd.getHeadline());
 
@@ -157,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void refreshAd() {
+  private void refreshAd() {
         refresh.setEnabled(false);
 
         AdLoader.Builder builder = new AdLoader.Builder(this, ADMOB_AD_UNIT_ID);

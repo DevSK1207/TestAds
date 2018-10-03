@@ -3,10 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    ads:adSize="360x50"
+    android:layout_gravity="bottom"
     android:layout_height="wrap_content">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -53,7 +54,8 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/ad_advertiser"
@@ -61,6 +63,8 @@
                             android:layout_height="match_parent"
                             android:gravity="bottom"
                             android:textSize="14sp"
+                            android:text="vvvvgh"
+                            android:visibility="gone"
                             android:textStyle="bold"/>
 
                         <RatingBar
@@ -86,6 +90,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
+                    android:visibility="gone"
                     android:layout_marginEnd="20dp"
                     android:textSize="12sp" />
 
@@ -94,8 +99,8 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_width="250dp"
                     android:layout_height="175dp"
-                    android:layout_marginTop="5dp" />
-
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"/>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -112,6 +117,7 @@
                         android:paddingStart="5dp"
                         android:paddingRight="5dp"
                         android:paddingEnd="5dp"
+                        android:visibility="gone"
                         android:textSize="12sp" />
 
                     <TextView
@@ -121,6 +127,7 @@
                         android:paddingLeft="5dp"
                         android:paddingStart="5dp"
                         android:paddingRight="5dp"
+                        android:visibility="gone"
                         android:paddingEnd="5dp"
                         android:textSize="12sp" />
 
@@ -128,11 +135,11 @@
                         android:id="@+id/ad_call_to_action"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="ggrgg"
                         android:gravity="center"
                         android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
 </com.google.android.gms.ads.formats.UnifiedNativeAdView>
